@@ -1,0 +1,20 @@
+{
+  "name": "omne-desktop-skins",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Skins for the OMNE desktop client: one directory per skin, each published as an OMNE skin extension.",
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "test": "node --test 'tests/**/*.test.mjs'",
+    "check": "node scripts/validate.mjs && node --test 'tests/**/*.test.mjs'",
+    "new": "node scripts/new-skin.mjs",
+    "sync-contract": "node scripts/sync-contract.mjs",
+    "dream": "node scripts/import-dream-skin.mjs",
+    "art": "node scripts/fetch-art.mjs"
+  }
+}

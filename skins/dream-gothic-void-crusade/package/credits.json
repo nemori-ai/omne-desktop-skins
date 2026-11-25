@@ -1,0 +1,32 @@
+{
+  "skin": "dream-gothic-void-crusade",
+  "code": {
+    "licence": "MIT",
+    "by": "nemori-ai"
+  },
+  "converter": {
+    "by": "scripts/import-dream-skin.mjs",
+    "revision": 2
+  },
+  "artwork": {
+    "licence": "MIT",
+    "files": "art/",
+    "by": "seansong-ideogram",
+    "profile": "https://github.com/seansong-ideogram",
+    "via": "https://github.com/Fei-Away/Codex-Dream-Skin/pull/134",
+    "derivedFrom": {
+      "repository": "https://github.com/Fei-Away/Codex-Dream-Skin",
+      "commit": "6fc42df48a6a5365011f55cc349e20c038e56d1d",
+      "path": "macos/presets/preset-gothic-void-crusade/background.jpg",
+      "changes": "scaled and re-encoded to WebP by scripts/import-dream-skin.mjs"
+    },
+    "grant": "Created and contributed by its author for inclusion in the MIT-licensed Codex Dream Skin project; upstream ships it as the redistributable default artwork of its public installers (upstream macos/NOTICE.md, section Gothic Void Crusade).",
+    "notice": "Copyright (c) 2026 Codex Dream Skin Studio contributors"
+  },
+  "theme": {
+    "from": "https://github.com/Fei-Away/Codex-Dream-Skin/tree/6fc42df48a6a5365011f55cc349e20c038e56d1d/macos/presets/preset-gothic-void-crusade",
+    "licence": "MIT",
+    "notice": "Copyright (c) 2026 Codex Dream Skin Studio contributors"
+  },
+  "disclaimer": "Codex Dream Skin is an unofficial customization project, not affiliated with, endorsed by or sponsored by OpenAI. Neither these skins nor their names imply any OpenAI or Codex affiliation."
+}

@@ -1,0 +1,60 @@
+{
+  "$comment": "Which Codex Dream Skin themes become skins here, and the rights each one ships under. npm run import:dream -- --upstream <checkout> regenerates every skin listed; a theme is added by adding an entry, never by writing a skin by hand. Only art the upstream licenses for redistribution is listed; what is left out, and why, is under excluded.",
+  "repository": "https://github.com/Fei-Away/Codex-Dream-Skin",
+  "commit": "6fc42df48a6a5365011f55cc349e20c038e56d1d",
+  "licence": "MIT",
+  "copyright": "Copyright (c) 2026 Codex Dream Skin Studio contributors",
+  "disclaimer": "Codex Dream Skin is an unofficial customization project, not affiliated with, endorsed by or sponsored by OpenAI. Neither these skins nor their names imply any OpenAI or Codex affiliation.",
+  "themes": [
+    {
+      "skin": "dream-gothic-void-crusade",
+      "theme": "macos/presets/preset-gothic-void-crusade",
+      "sha256": {
+        "theme.json": "8316c6ad29e3b84806358ab4a730c7e063b261e379179b9608cf751c282d66a7",
+        "background.jpg": "b76a7cbe2ff9d923846e931984d243a7ba1f25de8d190b5c6412c809c41aee42"
+      },
+      "summary": "Gothic Void Crusade：烛金与深红的哥特大教堂浮于虚空，为专注而设的庄严地平线（Codex Dream Skin 主题移植）。",
+      "artwork": {
+        "licence": "MIT",
+        "by": "seansong-ideogram",
+        "profile": "https://github.com/seansong-ideogram",
+        "via": "https://github.com/Fei-Away/Codex-Dream-Skin/pull/134",
+        "grant": "Created and contributed by its author for inclusion in the MIT-licensed Codex Dream Skin project; upstream ships it as the redistributable default artwork of its public installers (upstream macos/NOTICE.md, section Gothic Void Crusade)."
+      }
+    },
+    {
+      "skin": "dream-red-white",
+      "theme": "macos/assets",
+      "sha256": {
+        "theme.json": "fcce3f314500be1a58381ffe7f9a6b212912d54ff9a0e7d17b6664c1516f750e",
+        "portal-hero.png": "31bde93bb02d6723e0b6aa0ead675577604120acb0a6799163dd37f5cdd0a08e"
+      },
+      "summary": "Dream Skin 红白：玫瑰红光穹与白色未来城的抽象晨景，红白配色（Codex Dream Skin 默认主题移植）。",
+      "artwork": {
+        "licence": "MIT",
+        "by": "Codex Dream Skin Studio contributors",
+        "profile": "https://github.com/Fei-Away/Codex-Dream-Skin",
+        "grant": "Original abstract art with no characters, generated for the Codex Dream Skin repository and covered by its MIT licence (upstream macos/NOTICE.md, section Demo artwork; macos/references/asset-provenance.md records it as generated with gpt-image-2 for that project, under an earlier file hash)."
+      },
+      "leaveOut": [
+        "promoTitle",
+        "promoSub",
+        "promoUrl"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "theme": "macos/presets/preset-arina-hashimoto (and windows/assets/dream-reference.jpg, docs/images/presets/arina-hashimoto-*)",
+      "why": "A real person's likeness. Upstream macos/NOTICE.md excludes these files from the MIT licence and says redistribution needs an independent rights review. npm run dream -- <theme dir or zip> can still turn such a theme into a local skin for your own use; it is never written under skins/."
+    },
+    {
+      "theme": "docs/images/* (DeepSeek-鲸鱼娘, haizeiwang, jinx-codex, 悟空, gallery/skin-*, banners, screenshots)",
+      "why": "README and promotional images of franchise characters or of the app itself, not theme packs. Upstream's NOTICE grants no rights to character likenesses or franchise art."
+    },
+    {
+      "theme": "community themes (api.dreamskin.cc)",
+      "why": "Not part of the upstream repository. The ones whose declared licence allows redistribution are indexed, metadata only, in sources/dreamskin-community.json and converted on demand by npm run dream -- --all or -- <ver_id>; their pictures are never committed."
+    }
+  ]
+}

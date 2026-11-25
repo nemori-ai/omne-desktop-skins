@@ -1,0 +1,182 @@
+{
+  "schema": 1,
+  "name": "dream-gothic-void-crusade",
+  "summary": "Gothic Void Crusade：烛金与深红的哥特大教堂浮于虚空，为专注而设的庄严地平线（Codex Dream Skin 主题移植）。",
+  "kind": "skin",
+  "client": {
+    "members": [
+      {
+        "point": "shell.tokens",
+        "key": "shell.app",
+        "data": {
+          "--omne-surface-page": "light-dark(#f6f4f0, #0d0d0e)",
+          "--omne-surface-panel": "light-dark(#fefdfc, #171513)",
+          "--omne-surface-panel-soft": "light-dark(#f3eee9, #211d18)",
+          "--omne-surface-overlay": "light-dark(#fefdfc, #201e1b)",
+          "--omne-surface-field": "light-dark(#fefdfc, #22201d)",
+          "--omne-hover": "light-dark(#efeeec, #262421)",
+          "--omne-press": "light-dark(#e4e2e2, #312f2b)",
+          "--omne-selected": "light-dark(#e9e4d9, #413824)",
+          "--omne-accent": "light-dark(#88703d, #c8a55a)",
+          "--omne-accent-hover": "light-dark(#7a6539, #ceaf6c)",
+          "--omne-accent-press": "light-dark(#6d5b36, #d3b77b)",
+          "--omne-accent-tint": "light-dark(#ede9e1, #3a3221)",
+          "--omne-accent-ink": "light-dark(#ffffff, #0d0d0e)",
+          "--omne-ink-primary": "light-dark(#221e22, #f3ead7)",
+          "--omne-ink-muted": "light-dark(#746b66, #b5a386)",
+          "--omne-ink-faint": "light-dark(#928b87, #837662)",
+          "--omne-line-subtle": "light-dark(#dcd4c5, #413823)",
+          "--omne-line": "light-dark(#bcb6b2, #595144)",
+          "--omne-line-focus": "light-dark(#88703d, #c8a55a)",
+          "--omne-info-ink": "light-dark(#88703d, #c8a55a)",
+          "--omne-info-fill": "light-dark(#ede9e1, #3a3221)",
+          "--omne-info-line": "light-dark(#88703d, #c8a55a)",
+          "--omne-bubble-user": "light-dark(#f0ece5, #3e3523)",
+          "--omne-bubble-assistant": "light-dark(rgb(254 253 252 / 88%), rgb(23 21 19 / 88%))",
+          "--omne-bubble-ink": "light-dark(#221e22, #f3ead7)",
+          "--omne-tooltip": "light-dark(#221e22, #f3ead7)",
+          "--omne-tooltip-ink": "light-dark(#f6f4f0, #0d0d0e)",
+          "--omne-selection": "light-dark(rgb(136 112 61 / 30%), rgb(200 165 90 / 30%))",
+          "--omne-elevation-raised": "0 0 0 1px light-dark(#dcd4c5, #413823), 0 8px 24px rgb(0 0 0 / 16%)",
+          "--omne-elevation-overlay": "0 0 0 1px light-dark(#dcd4c5, #413823), 0 12px 32px rgb(0 0 0 / 24%)",
+          "--omne-radius-control": "calc(var(--omne-size) * 10px)",
+          "--omne-radius-card": "calc(var(--omne-size) * 12px)",
+          "--omne-radius-window": "calc(var(--omne-size) * 18px)"
+        }
+      },
+      {
+        "point": "shell.tokens",
+        "key": "shell.sidebar",
+        "data": {
+          "--omne-surface-panel": "light-dark(#f3f1eb, #332c1e)",
+          "--omne-surface-panel-soft": "light-dark(#ece8de, #423824)",
+          "--omne-surface-field": "light-dark(#f3f1eb, #3d3628)",
+          "--omne-surface-overlay": "light-dark(#f3f1eb, #3b3426)",
+          "--omne-ink-primary": "light-dark(#221e22, #f3ead7)",
+          "--omne-ink-muted": "light-dark(#746b66, #b5a386)",
+          "--omne-ink-faint": "light-dark(#8e8783, #8e7f67)",
+          "--omne-hover": "light-dark(#e5e2dd, #41392b)",
+          "--omne-press": "light-dark(#dad7d2, #4a4335)",
+          "--omne-selected": "light-dark(#e0d9cb, #57492d)",
+          "--omne-line-subtle": "light-dark(#dad2c1, #5d4e2f)",
+          "--omne-line": "light-dark(#bab4af, #6e624d)",
+          "--omne-line-focus": "light-dark(#88703d, #c8a55a)",
+          "--omne-accent": "light-dark(#88703d, #c8a55a)",
+          "--omne-accent-hover": "light-dark(#7a6539, #ceaf6c)",
+          "--omne-accent-press": "light-dark(#6d5b36, #d3b77b)",
+          "--omne-accent-tint": "light-dark(#e4dfd2, #51442a)",
+          "--omne-accent-ink": "light-dark(#ffffff, #332c1e)"
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "shell.sidebar",
+        "data": {
+          "base": {
+            "background": "file(art/sidebar.webp) center bottom / 100% auto no-repeat, light-dark(#f3f1eb, #332c1e)",
+            "box-shadow": "inset -1px 0 0 light-dark(rgb(136 112 61 / 40%), rgb(200 165 90 / 40%))",
+            "color": "light-dark(#221e22, #f3ead7)"
+          }
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "shell.sidebar.nav.row",
+        "data": {
+          "selected": {
+            "background": "light-dark(#e4dfd2, #51442a)",
+            "box-shadow": "inset 3px 0 0 light-dark(#88703d, #c8a55a)",
+            "color": "light-dark(#221e22, #f3ead7)"
+          }
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "session.list.item",
+        "data": {
+          "selected": {
+            "background": "light-dark(#e4dfd2, #51442a)",
+            "box-shadow": "inset 3px 0 0 light-dark(#88703d, #c8a55a)",
+            "color": "light-dark(#221e22, #f3ead7)"
+          }
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "session.list.new",
+        "data": {
+          "base": {
+            "background": "light-dark(#88703d, #c8a55a)",
+            "color": "light-dark(#ffffff, #332c1e)",
+            "border-radius": "999px",
+            "box-shadow": "0 2px 8px light-dark(rgb(136 112 61 / 30%), rgb(200 165 90 / 30%))"
+          },
+          "hover": {
+            "background": "light-dark(#7a6539, #ceaf6c)"
+          }
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "session.header",
+        "data": {
+          "base": {
+            "background": "light-dark(rgb(254 253 252 / 72%), rgb(23 21 19 / 72%))",
+            "box-shadow": "0 1px 0 light-dark(rgb(136 112 61 / 30%), rgb(200 165 90 / 30%))",
+            "border-radius": "0 0 calc(var(--omne-size) * 14px) calc(var(--omne-size) * 14px)"
+          }
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "session.composer",
+        "data": {
+          "base": {
+            "background": "light-dark(rgb(254 253 252 / 86%), rgb(23 21 19 / 86%))",
+            "border": "1px solid light-dark(rgb(136 112 61 / 42%), rgb(200 165 90 / 42%))",
+            "border-radius": "calc(var(--omne-size) * 16px)",
+            "box-shadow": "0 6px 20px light-dark(rgb(136 112 61 / 12%), rgb(200 165 90 / 12%))"
+          }
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "session.composer.send",
+        "data": {
+          "base": {
+            "border-radius": "999px",
+            "box-shadow": "0 0 0 2px light-dark(rgb(136 112 61 / 35%), rgb(200 165 90 / 35%))"
+          }
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "shell.gate",
+        "data": {
+          "base": {
+            "border": "1px solid light-dark(rgb(136 112 61 / 50%), rgb(200 165 90 / 50%))",
+            "border-radius": "calc(var(--omne-size) * 18px)"
+          }
+        }
+      },
+      {
+        "point": "shell.part-render",
+        "key": "session.backdrop",
+        "module": "draw/dream.js",
+        "export": "backdrop"
+      },
+      {
+        "point": "shell.part-render",
+        "key": "session.companion.figure",
+        "module": "draw/dream.js",
+        "export": "companion"
+      },
+      {
+        "point": "shell.piece",
+        "key": "figure",
+        "module": "draw/dream.js",
+        "export": "figure"
+      }
+    ]
+  }
+}

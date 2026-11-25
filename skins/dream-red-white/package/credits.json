@@ -1,0 +1,31 @@
+{
+  "skin": "dream-red-white",
+  "code": {
+    "licence": "MIT",
+    "by": "nemori-ai"
+  },
+  "converter": {
+    "by": "scripts/import-dream-skin.mjs",
+    "revision": 2
+  },
+  "artwork": {
+    "licence": "MIT",
+    "files": "art/",
+    "by": "Codex Dream Skin Studio contributors",
+    "profile": "https://github.com/Fei-Away/Codex-Dream-Skin",
+    "derivedFrom": {
+      "repository": "https://github.com/Fei-Away/Codex-Dream-Skin",
+      "commit": "6fc42df48a6a5365011f55cc349e20c038e56d1d",
+      "path": "macos/assets/portal-hero.png",
+      "changes": "scaled and re-encoded to WebP by scripts/import-dream-skin.mjs"
+    },
+    "grant": "Original abstract art with no characters, generated for the Codex Dream Skin repository and covered by its MIT licence (upstream macos/NOTICE.md, section Demo artwork; macos/references/asset-provenance.md records it as generated with gpt-image-2 for that project, under an earlier file hash).",
+    "notice": "Copyright (c) 2026 Codex Dream Skin Studio contributors"
+  },
+  "theme": {
+    "from": "https://github.com/Fei-Away/Codex-Dream-Skin/tree/6fc42df48a6a5365011f55cc349e20c038e56d1d/macos/assets",
+    "licence": "MIT",
+    "notice": "Copyright (c) 2026 Codex Dream Skin Studio contributors"
+  },
+  "disclaimer": "Codex Dream Skin is an unofficial customization project, not affiliated with, endorsed by or sponsored by OpenAI. Neither these skins nor their names imply any OpenAI or Codex affiliation."
+}

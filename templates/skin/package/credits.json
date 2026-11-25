@@ -1,0 +1,9 @@
+{
+  "skin": "__NAME__",
+  "code": { "licence": "MIT", "by": "nemori-ai" },
+  "artwork": {
+    "licence": "none yet: say whose the art is and under what licence before adding any under art/",
+    "files": "art/",
+    "chain": []
+  }
+}

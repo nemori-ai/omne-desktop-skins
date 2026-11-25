@@ -1,0 +1,182 @@
+{
+  "schema": 1,
+  "name": "dream-red-white",
+  "summary": "Dream Skin 红白：玫瑰红光穹与白色未来城的抽象晨景，红白配色（Codex Dream Skin 默认主题移植）。",
+  "kind": "skin",
+  "client": {
+    "members": [
+      {
+        "point": "shell.tokens",
+        "key": "shell.app",
+        "data": {
+          "--omne-surface-page": "light-dark(#f7f4f5, #1b1217)",
+          "--omne-surface-panel": "light-dark(#ffffff, #261b21)",
+          "--omne-surface-panel-soft": "light-dark(#fff7f8, #32242b)",
+          "--omne-surface-overlay": "light-dark(#ffffff, #2e2329)",
+          "--omne-surface-field": "light-dark(#ffffff, #30262b)",
+          "--omne-hover": "light-dark(#f0f0f0, #352a2f)",
+          "--omne-press": "light-dark(#e6e4e5, #3f3439)",
+          "--omne-selected": "light-dark(#fae0e3, #532931)",
+          "--omne-accent": "#e25563",
+          "--omne-accent-hover": "light-dark(#c84e5a, #e46a76)",
+          "--omne-accent-press": "light-dark(#b24853, #e67d86)",
+          "--omne-accent-tint": "light-dark(#fbe7e9, #4c272e)",
+          "--omne-accent-ink": "light-dark(#2b2224, #1b1217)",
+          "--omne-ink-primary": "light-dark(#2b2224, #f1eee9)",
+          "--omne-ink-muted": "light-dark(#8a7a7d, #b29ca4)",
+          "--omne-ink-faint": "light-dark(#93888a, #84737a)",
+          "--omne-line-subtle": "light-dark(#ecd9db, #53252c)",
+          "--omne-line": "light-dark(#c6bdbf, #5f5056)",
+          "--omne-line-focus": "#e25563",
+          "--omne-info-ink": "#e25563",
+          "--omne-info-fill": "light-dark(#fbe7e9, #4c272e)",
+          "--omne-info-line": "#e25563",
+          "--omne-bubble-user": "light-dark(#fcebec, #50282f)",
+          "--omne-bubble-assistant": "light-dark(rgb(255 255 255 / 88%), rgb(38 27 33 / 88%))",
+          "--omne-bubble-ink": "light-dark(#2b2224, #f1eee9)",
+          "--omne-tooltip": "light-dark(#2b2224, #f1eee9)",
+          "--omne-tooltip-ink": "light-dark(#f7f4f5, #1b1217)",
+          "--omne-selection": "rgb(226 85 99 / 30%)",
+          "--omne-elevation-raised": "0 0 0 1px light-dark(#ecd9db, #53252c), 0 8px 24px rgb(0 0 0 / 16%)",
+          "--omne-elevation-overlay": "0 0 0 1px light-dark(#ecd9db, #53252c), 0 12px 32px rgb(0 0 0 / 24%)",
+          "--omne-radius-control": "calc(var(--omne-size) * 10px)",
+          "--omne-radius-card": "calc(var(--omne-size) * 12px)",
+          "--omne-radius-window": "calc(var(--omne-size) * 18px)"
+        }
+      },
+      {
+        "point": "shell.tokens",
+        "key": "shell.sidebar",
+        "data": {
+          "--omne-surface-panel": "light-dark(#fcf0f1, #44242b)",
+          "--omne-surface-panel-soft": "light-dark(#fbe5e7, #542931)",
+          "--omne-surface-field": "light-dark(#fcf0f1, #4d2e35)",
+          "--omne-surface-overlay": "light-dark(#fcf0f1, #4b2c33)",
+          "--omne-ink-primary": "light-dark(#2b2224, #f1eee9)",
+          "--omne-ink-muted": "light-dark(#8a7a7d, #b29ca4)",
+          "--omne-ink-faint": "light-dark(#948789, #917880)",
+          "--omne-hover": "light-dark(#eee1e3, #503239)",
+          "--omne-press": "light-dark(#e3d7d8, #593d42)",
+          "--omne-selected": "light-dark(#f8d4d7, #6a3039)",
+          "--omne-line-subtle": "light-dark(#f0d5d8, #70323b)",
+          "--omne-line": "light-dark(#c9bbbd, #765a62)",
+          "--omne-line-focus": "#e25563",
+          "--omne-accent": "#e25563",
+          "--omne-accent-hover": "light-dark(#c84e5a, #e46a76)",
+          "--omne-accent-press": "light-dark(#b24853, #e67d86)",
+          "--omne-accent-tint": "light-dark(#f9dadd, #642e36)",
+          "--omne-accent-ink": "light-dark(#2b2224, #44242b)"
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "shell.sidebar",
+        "data": {
+          "base": {
+            "background": "file(art/sidebar.webp) center bottom / 100% auto no-repeat, light-dark(#fcf0f1, #44242b)",
+            "box-shadow": "inset -1px 0 0 rgb(226 85 99 / 40%)",
+            "color": "light-dark(#2b2224, #f1eee9)"
+          }
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "shell.sidebar.nav.row",
+        "data": {
+          "selected": {
+            "background": "light-dark(#f9dadd, #642e36)",
+            "box-shadow": "inset 3px 0 0 #e25563",
+            "color": "light-dark(#2b2224, #f1eee9)"
+          }
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "session.list.item",
+        "data": {
+          "selected": {
+            "background": "light-dark(#f9dadd, #642e36)",
+            "box-shadow": "inset 3px 0 0 #e25563",
+            "color": "light-dark(#2b2224, #f1eee9)"
+          }
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "session.list.new",
+        "data": {
+          "base": {
+            "background": "#e25563",
+            "color": "light-dark(#2b2224, #44242b)",
+            "border-radius": "999px",
+            "box-shadow": "0 2px 8px rgb(226 85 99 / 30%)"
+          },
+          "hover": {
+            "background": "light-dark(#c84e5a, #e46a76)"
+          }
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "session.header",
+        "data": {
+          "base": {
+            "background": "light-dark(rgb(255 255 255 / 72%), rgb(38 27 33 / 72%))",
+            "box-shadow": "0 1px 0 rgb(226 85 99 / 30%)",
+            "border-radius": "0 0 calc(var(--omne-size) * 14px) calc(var(--omne-size) * 14px)"
+          }
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "session.composer",
+        "data": {
+          "base": {
+            "background": "light-dark(rgb(255 255 255 / 86%), rgb(38 27 33 / 86%))",
+            "border": "1px solid rgb(226 85 99 / 42%)",
+            "border-radius": "calc(var(--omne-size) * 16px)",
+            "box-shadow": "0 6px 20px rgb(226 85 99 / 12%)"
+          }
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "session.composer.send",
+        "data": {
+          "base": {
+            "border-radius": "999px",
+            "box-shadow": "0 0 0 2px rgb(226 85 99 / 35%)"
+          }
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "shell.gate",
+        "data": {
+          "base": {
+            "border": "1px solid rgb(226 85 99 / 50%)",
+            "border-radius": "calc(var(--omne-size) * 18px)"
+          }
+        }
+      },
+      {
+        "point": "shell.part-render",
+        "key": "session.backdrop",
+        "module": "draw/dream.js",
+        "export": "backdrop"
+      },
+      {
+        "point": "shell.part-render",
+        "key": "session.companion.figure",
+        "module": "draw/dream.js",
+        "export": "companion"
+      },
+      {
+        "point": "shell.piece",
+        "key": "figure",
+        "module": "draw/dream.js",
+        "export": "figure"
+      }
+    ]
+  }
+}

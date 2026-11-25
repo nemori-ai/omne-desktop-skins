@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+/tmp/
+/local-skins/
+/.cache/
+# Artwork is fetched from each skin's pinned upstream by npm run art, never committed.
+/skins/*/package/art/

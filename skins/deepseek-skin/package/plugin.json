@@ -1,0 +1,198 @@
+{
+  "schema": 1,
+  "name": "deepseek-skin",
+  "summary": "深海女仆工坊：DeepSeek 鲸鱼娘女仆守在对话两侧，宫殿大厅昼夜随亮暗切换；深海蓝与金边的侧栏、蕾丝蝴蝶结输入框，Agent 换成 Q 版鲸鱼娘。",
+  "kind": "skin",
+  "client": {
+    "members": [
+      {
+        "point": "shell.tokens",
+        "key": "shell.app",
+        "data": {
+          "--omne-surface-page": "light-dark(#f2f4fb, #0a1330)",
+          "--omne-surface-panel": "light-dark(#fbfcff, #101c40)",
+          "--omne-surface-panel-soft": "light-dark(#e9edf8, #0d1736)",
+          "--omne-surface-overlay": "light-dark(#fdfdff, #13204a)",
+          "--omne-surface-field": "light-dark(#ffffff, #13204a)",
+          "--omne-hover": "light-dark(#e2e7f6, #1a2955)",
+          "--omne-press": "light-dark(#d4dcf2, #22335f)",
+          "--omne-selected": "light-dark(#d4dcf2, #22335f)",
+          "--omne-accent": "light-dark(#31498f, #a9bcf0)",
+          "--omne-accent-hover": "light-dark(#283d7a, #bfcdf4)",
+          "--omne-accent-press": "light-dark(#1e3064, #d2dcf7)",
+          "--omne-accent-tint": "light-dark(#e1e7f8, #1f2d5c)",
+          "--omne-accent-ink": "light-dark(#fffaf0, #0a1330)",
+          "--omne-ink-primary": "light-dark(#141d45, #e9edfb)",
+          "--omne-ink-muted": "light-dark(#444e78, #b8c2e4)",
+          "--omne-ink-faint": "light-dark(#6a7399, #8d99c4)",
+          "--omne-line-subtle": "light-dark(#dbe1f1, #24345f)",
+          "--omne-line": "light-dark(#8e97bc, #5d6c9f)",
+          "--omne-line-focus": "light-dark(#a8843f, #d8bb80)",
+          "--omne-info-ink": "light-dark(#31498f, #bfcdf4)",
+          "--omne-info-fill": "light-dark(#e1e7f8, #1f2d5c)",
+          "--omne-info-line": "light-dark(#31498f, #a9bcf0)",
+          "--omne-bubble-user": "light-dark(#dfe6fa, #1f2e60)",
+          "--omne-bubble-assistant": "light-dark(rgb(255 255 255 / 88%), rgb(16 27 62 / 88%))",
+          "--omne-bubble-ink": "light-dark(#1b2a66, #dde5ff)",
+          "--omne-tooltip": "light-dark(#14204d, #f3efe2)",
+          "--omne-tooltip-ink": "light-dark(#fffaf0, #14204d)",
+          "--omne-elevation-raised": "0 0 0 1px light-dark(#dbe1f1, #24345f), 0 8px 24px rgb(12 22 64 / 16%)",
+          "--omne-elevation-overlay": "0 0 0 1px light-dark(#d8bb80, #6b5a3a), 0 12px 32px rgb(12 22 64 / 24%)",
+          "--omne-radius-control": "calc(var(--omne-size) * 10px)",
+          "--omne-radius-card": "calc(var(--omne-size) * 12px)",
+          "--omne-radius-window": "calc(var(--omne-size) * 18px)"
+        }
+      },
+      {
+        "point": "shell.tokens",
+        "key": "shell.sidebar",
+        "data": {
+          "--omne-surface-panel-soft": "#0f1b45",
+          "--omne-surface-field": "rgb(255 255 255 / 7%)",
+          "--omne-ink-primary": "#eef1fc",
+          "--omne-ink-muted": "#bcc6e8",
+          "--omne-ink-faint": "#8e9ac6",
+          "--omne-hover": "rgb(255 255 255 / 8%)",
+          "--omne-press": "rgb(255 255 255 / 14%)",
+          "--omne-selected": "rgb(216 187 128 / 18%)",
+          "--omne-line-subtle": "rgb(216 187 128 / 26%)",
+          "--omne-line": "rgb(216 187 128 / 50%)",
+          "--omne-line-focus": "#e4cb96",
+          "--omne-accent": "#d8bb80",
+          "--omne-accent-hover": "#e4cb96",
+          "--omne-accent-press": "#c9a868",
+          "--omne-accent-tint": "rgb(216 187 128 / 18%)",
+          "--omne-accent-ink": "#0f1b45",
+          "--omne-surface-panel": "#13225a",
+          "--omne-surface-overlay": "rgb(216 187 128 / 26%)"
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "shell.sidebar",
+        "data": {
+          "base": {
+            "background": "file(art/corner-top-right.webp) right 4px top 4px / 60px 60px no-repeat, file(art/corner-bottom-left.webp) left 4px bottom 4px / 44px 44px no-repeat, light-dark(#13225a, #0b1534)",
+            "box-shadow": "inset -1px 0 0 rgb(216 187 128 / 45%)",
+            "color": "#eef1fc"
+          }
+        }
+      },
+      {
+        "point": "shell.tokens",
+        "key": "shell.sidebar.nav",
+        "data": {
+          "--omne-selected": "transparent"
+        }
+      },
+      {
+        "point": "shell.tokens",
+        "key": "session.list",
+        "data": {
+          "--omne-selected": "transparent",
+          "--omne-ink-faint": "#aeb8e0"
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "shell.sidebar.nav.row",
+        "data": {
+          "selected": {
+            "background": "file(art/ribbon.webp) left center / 100% 100% no-repeat",
+            "color": "#ffffff"
+          }
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "session.list.item",
+        "data": {
+          "selected": {
+            "background": "file(art/ribbon.webp) left center / 100% 100% no-repeat",
+            "color": "#ffffff"
+          },
+          "base": {
+            "padding-left": "calc(4% + var(--omne-size) * 8px)",
+            "padding-right": "calc(11% + var(--omne-size) * 4px)"
+          }
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "session.list.new",
+        "data": {
+          "base": {
+            "background": "#fff8ea",
+            "color": "#1b2a66",
+            "border-radius": "999px",
+            "box-shadow": "0 0 0 1px #d8bb80, 0 2px 8px rgb(0 0 0 / 25%)"
+          },
+          "hover": {
+            "background": "#ffffff"
+          }
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "session.composer",
+        "data": {
+          "base": {
+            "background": "file(art/bow.webp) center top 2px / 86px 40px no-repeat, file(art/lace.webp) left top / auto 14px repeat-x, light-dark(rgb(255 255 255 / 86%), rgb(14 24 58 / 88%))",
+            "border": "1.5px solid light-dark(#c9a868, #b8955a)",
+            "border-radius": "calc(var(--omne-size) * 20px)",
+            "padding-top": "calc(var(--spacing) * 3 + 34px)"
+          }
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "session.composer.send",
+        "data": {
+          "base": {
+            "border-radius": "999px",
+            "box-shadow": "0 0 0 2px light-dark(#d8bb80, #b8955a)"
+          }
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "session.header",
+        "data": {
+          "base": {
+            "background": "light-dark(rgb(248 249 254 / 74%), rgb(10 18 44 / 74%))",
+            "box-shadow": "0 1px 0 rgb(197 164 104 / 45%)",
+            "border-radius": "0 0 calc(var(--omne-size) * 14px) calc(var(--omne-size) * 14px)"
+          }
+        }
+      },
+      {
+        "point": "shell.part-style",
+        "key": "shell.gate",
+        "data": {
+          "base": {
+            "border": "1px solid light-dark(#c9a868, #b8955a)",
+            "border-radius": "calc(var(--omne-size) * 18px)"
+          }
+        }
+      },
+      {
+        "point": "shell.part-render",
+        "key": "session.backdrop",
+        "module": "draw/deepseek.js",
+        "export": "backdrop"
+      },
+      {
+        "point": "shell.part-render",
+        "key": "session.companion.figure",
+        "module": "draw/deepseek.js",
+        "export": "companion"
+      },
+      {
+        "point": "shell.piece",
+        "key": "figure",
+        "module": "draw/deepseek.js",
+        "export": "figure"
+      }
+    ]
+  }
+}

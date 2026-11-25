@@ -1,0 +1,21 @@
+{
+  "skin": "deepseek-skin",
+  "code": { "licence": "MIT", "by": "nemori-ai" },
+  "artwork": {
+    "licence": "CC BY-NC-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "files": "art/",
+    "derivedFrom": {
+      "repository": "https://github.com/Small-tailqwq/dsh-deep-whale",
+      "commit": "a9e2884388122be47a7c737c18b98ac4896d7c27",
+      "path": "maid-atelier/assets",
+      "changes": "cropped, scaled and re-encoded to WebP by tools/build_art.py; the bottom-left corner is the top-right corner turned 180 degrees"
+    },
+    "chain": [
+      { "role": "一创 original whale-girl character design", "by": "上善", "profile": "https://www.pixiv.net/users/62155430" },
+      { "role": "二创 maid whale-girl redesign with DeepSeek elements", "by": "ZipZipPipe", "profile": "https://www.pixiv.net/users/18604994" },
+      { "role": "三创 maid-atelier skin artwork", "by": "Small-tailqwq", "profile": "https://github.com/Small-tailqwq" }
+    ],
+    "terms": "Attribution must keep the whole chain above; non-commercial use only; derivatives are shared under the same licence."
+  }
+}
