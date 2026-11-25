@@ -61,6 +61,12 @@ Who chooses:
 - The person named a count and clear wishes ("装 5 套暗色蓝调的") — choose yourself from the sheet and install.
 - Otherwise — propose a short list (number, name, licence) and install what the person picks.
 
+A subject the names do not carry (猫娘, a character, a kind of scene) cannot be searched: names are free text and
+rarely say what the picture shows. Then go through the pictures themselves: take every id `--find` gives with only a
+ground or no wish at all (`--limit 1000`), make sheets of 24 in turn, open each, and note the numbers that fit. Check
+each pick's name too (「白狐狸」 is a fox, not a cat). The previews are whole pictures: a pass over the catalogue
+leaves about 2 GiB in `.cache/previews/`; delete it when you are done.
+
 ## 4. Convert the batch
 
 ```sh

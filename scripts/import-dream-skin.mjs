@@ -277,10 +277,8 @@ async function sheetOf(ids) {
   if (ids.length === 0 || ids.length > SHEET_MAX) fail(`--sheet takes 1 to ${SHEET_MAX} version ids`)
   const cache = join(ROOT, '.cache', 'previews')
   mkdirSync(cache, { recursive: true })
-  const pictures = []
-  const names = []
-  for (const id of ids) {
-    if (!/^ver_[a-z0-9]{8,64}$/u.test(id)) fail(`${id} is not a DreamSkin version id (ver_…)`)
+  for (const id of ids) if (!/^ver_[a-z0-9]{8,64}$/u.test(id)) fail(`${id} is not a DreamSkin version id (ver_…)`)
+  const one = async id => {
     const path = join(cache, `${id}.img`)
     const preview = await getJson(`${API}/${id}/preview`)
     if (!existsSync(path)) {
@@ -288,9 +286,13 @@ async function sheetOf(ids) {
       if (!response.ok) fail(`the preview of ${id} answered ${response.status}`)
       writeFileSync(path, Buffer.from(await response.arrayBuffer()))
     }
-    pictures.push(path)
-    names.push(preview.theme?.name ?? '')
+    return { path, name: preview.theme?.name ?? '' }
   }
+  // Eight at a time: the previews are whole pictures, and one after another a sheet takes minutes.
+  const got = []
+  for (let at = 0; at < ids.length; at += 8) got.push(...(await Promise.all(ids.slice(at, at + 8).map(one))))
+  const pictures = got.map(g => g.path)
+  const names = got.map(g => g.name)
   const out = join(ROOT, 'local-skins', 'sheet.jpg')
   const made = art('sheet', out, ...pictures)
   ids.forEach((id, i) => console.log(`${String(i + 1).padStart(2)}  ${id}  ${names[i]}`))
